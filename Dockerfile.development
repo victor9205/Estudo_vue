@@ -1,0 +1,21 @@
+FROM node:16.1
+
+WORKDIR /app
+
+#ENV PATH /app/node_modules/.bin:$PATH
+
+#RUN npm install @vue/cli@3.7.0 -g
+#CMD npm run serve
+RUN userdel -r node
+
+ARG uid
+ARG group_id
+ARG user
+
+RUN addgroup --gid $group_id $user
+
+RUN adduser --disabled-password --gecos '' --uid $uid --gid $group_id $user
+
+# Set the active user and open the interactive terminal
+USER $user
+EXPOSE 8080
