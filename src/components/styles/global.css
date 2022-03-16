@@ -39,3 +39,8 @@
        flex-direction: column;
      }
 
+     h1{
+       color: var(--color-text-title);
+       margin:40px 0;
+       font-size: 30px;
+     }
