@@ -4,9 +4,10 @@
       <h1>Vídeos</h1>
 
       <section class="videos">
+
         <div v-for="(video, index) in videos" class="video" :key="index">
-          <a :href="video.link">
-            <img :src="video.thumb" :alt="video.title" />
+          <a :href="video.link" target="blanck">
+            <img :src="video.thumb" :alt="video.title">
             <div class="video-title">{{ video.title }}</div>
           </a>
         </div>
@@ -20,7 +21,7 @@ import api from "@/services/api.js";
 
 export default {
   name: "Videos",
-  data() {
+  data(){
     return {
       videos: [],
     };
@@ -46,10 +47,31 @@ main {
 
 .video{
   width: 80%;
+  margin-bottom: 30px;
 }
 
 .video img{
   width: 100%;
+}
+
+.video a{
+  color: var(--color-text-dark);
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width:700px){
+  .videos{
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .video{
+    margin-right: 30px;
+    width: 300px;
+  }
 }
 
 </style>
