@@ -30,9 +30,8 @@ main {
   align-items: center;
 }
 
-.about{
+.about {
   margin-bottom: 40px;
   color: var(--color-text-dark);
-
 }
 </style>

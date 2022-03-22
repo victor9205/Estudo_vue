@@ -21,7 +21,10 @@ export default {
 <style scoped>
 
 main{
-    background-color:var(--color-background-home);
+    background-image: url('https://i.pinimg.com/originals/50/5f/62/505f6223f3624bfcd158cf827bd337da.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-color:var(--color-background-home); */
     justify-content: center;
     align-items: center;
 }

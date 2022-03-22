@@ -1,7 +1,7 @@
 <template>
   <header>  
   <nav class="container">   
-    <router-link to="/"><img alt="WDEV" id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"></router-link>
+    <router-link to="/"><img alt="Logos" id="logo" src="https://i.pinimg.com/originals/d8/d2/1e/d8d21eccca2486a700573797de378ec2.gif"></router-link>
     <img v-on:click="openMenu" alt="Abrir menu" id="menu-button" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg">
     <div v-on:click="closeMenu" id= "menu-overlay" v-if="menuActive"></div>
     <div id= "menu-items" :class="{active:menuActive}">
