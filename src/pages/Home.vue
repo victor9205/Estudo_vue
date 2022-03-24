@@ -21,7 +21,7 @@ export default {
 <style scoped>
 
 main{
-    background-image: url('https://i.pinimg.com/originals/50/5f/62/505f6223f3624bfcd158cf827bd337da.jpg');
+    background-image: url(/home/victor/projetos/Estudo_vue/src/components/media/staticBGLogo.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-color:var(--color-background-home); */
