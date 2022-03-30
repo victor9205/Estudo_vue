@@ -1,10 +1,10 @@
 :root {
-    --color-background:#F3F3F3;
-    --color-background-nav:#2B3D50;
-    --color-background-home:#344960;
+    --color-background:#2c2c2c;
+    --color-background-nav:#000000;
+    --color-background-home:#252525;
     --color-text-light:#EDEDED;
     --color-text-title:#FF5555;
-    --color-text-dark:#3D3D3D;
+    --color-text-dark:#c5bdbd;
   }
 
   *{
@@ -16,7 +16,7 @@
 
     html,
     body{
-    
+    background-image: src=(https://i.pinimg.com/originals/d8/d2/1e/d8d21eccca2486a700573797de378ec2.gif);
     background-color: var(--color-background);
     }
 
@@ -30,7 +30,7 @@
     }
 
     .container{
-       width: 90%;
+       width: 96%;
      }
 
      main{

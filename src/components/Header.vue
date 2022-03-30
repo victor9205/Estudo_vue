@@ -18,7 +18,7 @@
         <img
           alt="Abrir menu"
           id="menu-logo"
-          src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"
+          src="https://i.pinimg.com/originals/d8/d2/1e/d8d21eccca2486a700573797de378ec2.gif"
         />
         <ul>
           <li v-on:click="closeMenu"><router-link to="/">Home</router-link></li>
@@ -61,7 +61,7 @@ export default {
 header {
   background-color: var(--color-background-nav);
   width: 100%;
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,14 +74,11 @@ nav {
 }
 #logo {
   border-radius: 50%;
-  max-height: 200px;
-  max-width: 200px;
-  height: 200px;
-  width: 200px;
-  -o-object-fit: scale-down;
+  max-height: 160px;
+  max-width: 71px;
   object-fit: scale-down;
-  margin-top: 50px;
-}
+  margin-top: 3px;
+  }
 
 #menu-button {
   width: 30px;
