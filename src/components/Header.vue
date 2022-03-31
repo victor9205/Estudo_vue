@@ -1,6 +1,9 @@
 <template>
+
   <header>
-    <nav class="container">
+    
+        <nav class="container">
+
       <router-link to="/"
         ><img
           alt="Logos"
@@ -34,7 +37,9 @@
         </ul>
       </div>
     </nav>
+    
   </header>
+  
 </template>
 
 <script>
@@ -67,10 +72,6 @@ header {
   align-items: center;
 }
 
-body {
-  background-image: url(https://i.pinimg.com/originals/d8/d2/1e/d8d21eccca2486a700573797de378ec2.gif);
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -84,6 +85,8 @@ nav {
   object-fit: scale-down;
   margin-top: 3px;
 }
+
+
 
 #menu-button {
   width: 30px;
@@ -132,7 +135,7 @@ ul li a {
   color: var(--color-text-light);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #menu-button,
   #menu-logo,
   #menu-overlay {

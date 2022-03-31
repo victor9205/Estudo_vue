@@ -1,53 +1,65 @@
 :root {
-    --color-background:#2c2c2c;
-    --color-background-nav:#000000;
-    --color-background-home:#252525;
-    --color-text-light:#EDEDED;
-    --color-text-title:#FF5555;
-    --color-text-dark:#c5bdbd;
+  --color-background: #2c2c2c;
+  --color-background-nav: #000000;
+  --color-background-home: #252525;
+  --color-text-light: #EDEDED;
+  --color-text-title: #FF5555;
+  --color-text-dark: #c5bdbd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+
+body {
+  background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/mobileBkclean.gif);
+  background-repeat: no-repeat, repeat;
+  background-color: var(--color-background);
+  background-size: 100%;
+  background-position: auto;
+  width: 100%;
+
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s opacity;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  width: 96%;
+}
+
+main {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--color-text-title);
+  margin: 40px 0;
+  font-size: 30px;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/DescktopcleanNameBk.gif?raw=true);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+
+
   }
-
-  *{
-      padding:0;
-      margin:0;
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
-
-    html,
-    
-    body{
-      background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/DescktopcleanNameBk.gif?raw=true);
-      background-repeat: no-repeat, repeat;
-      background-color: var(--color-background);
-      background-size: 100%;
-      background-position: auto;
-      width: 100%;
-      
-    }
-
-    a{
-        text-decoration: none;
-        transition: 0.2s opacity;
-    }
-
-    a:hover{
-     opacity: 0.8;
-    }
-
-    .container{
-       width: 96%;
-     }
-
-     main{
-       width: 100%;
-       min-height: calc(100vh - 120px);
-       display: flex;
-       flex-direction: column;
-     }
-
-     h1{
-       color: var(--color-text-title);
-       margin:40px 0;
-       font-size: 30px;
-     }
+}

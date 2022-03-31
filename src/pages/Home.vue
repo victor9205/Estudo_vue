@@ -1,56 +1,75 @@
 <template>
   <main>
-      <div class="text-top">Vídeos novos toda <b>quinta</b> às <b>20h</b><b>(Modelo)</b></div>
-
-      <a href="https://www.youtube.com/channel/UC7467puGC8SbXr7vJV_YTpQ" target=" blank">
-        <img alt="Inscreva-se" id="subscribe" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/subscribe.svg">
-      </a>
-      <div class="text-bottom">https://www.youtube.com/channel/UC7467puGC8SbXr7vJV_YTpQ</div>
-        
-      
-
+    <img
+      alt="Tela Home Mobile"
+      id="background-home-mobile"
+      src="https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/MobileLogoBk.gif?raw=true"
+    />
   </main>
 </template>
 
 <script>
 export default {
-  name: "Home"
-}
+  name: "Home",
+};
 </script>
 
 <style scoped>
-
-main{
-    background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/DesktopBk.gif?raw=true);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    /* background-color:var(--color-background-home); */
-    justify-content: center;
-    align-items: center;
+main {
+  background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/DesktopBk.gif?raw=true);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  /* background-color:var(--color-background-home); */
+  justify-content: center;
+  align-items: center;
 }
 
-
-.text-top{
-    color: var(--color-text-light);
-    font-size: 22px;
-    margin-bottom: 20px;
+#main {
+  background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/MobileLogoBk.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-color:var(--color-background-home); */
+  justify-content: center;
+  align-items: center;
 }
 
-#subscribe{
-    width:340px;
-
+#content {
+  background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/MobileLogoBk.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+  #subscribe {
+    width: 340px;
+  }
 
-.text-bottom{
-    color: var(--color-text-light);
-    font-size:18px;
-    margin-top: 20px;
+.text-top {
+  color: var(--color-text-light);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+#background-home-mobile {
+  width: 100%;
+  height: 50%;
 }
 
-@media (min-width: 700px){
-    #subscribe{
-        width: 370px;  
-    }
+.text-bottom {
+  color: var(--color-text-light);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+  #subscribe {
+    width: 370px;
+  }
+
+  #background-home-mobile {
+    width: 0;
+  }
 }
 </style>
