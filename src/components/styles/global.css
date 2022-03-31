@@ -15,9 +15,15 @@
     }
 
     html,
+    
     body{
-    background-image: src=(https://i.pinimg.com/originals/d8/d2/1e/d8d21eccca2486a700573797de378ec2.gif);
-    background-color: var(--color-background);
+      background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/DescktopcleanNameBk.gif?raw=true);
+      background-repeat: no-repeat, repeat;
+      background-color: var(--color-background);
+      background-size: 100%;
+      background-position: auto;
+      width: 100%;
+      
     }
 
     a{

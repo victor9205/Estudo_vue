@@ -66,6 +66,11 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+body {
+  background-image: url(https://i.pinimg.com/originals/d8/d2/1e/d8d21eccca2486a700573797de378ec2.gif);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -78,7 +83,7 @@ nav {
   max-width: 71px;
   object-fit: scale-down;
   margin-top: 3px;
-  }
+}
 
 #menu-button {
   width: 30px;

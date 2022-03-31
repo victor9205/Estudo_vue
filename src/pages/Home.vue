@@ -21,10 +21,10 @@ export default {
 <style scoped>
 
 main{
-    background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/DesktopBk.gif);
-    /* background-repeat: no-repeat; */
-    background-size: 100%;
-    background-color:var(--color-background-home);
+    background-image: url(https://github.com/victor9205/Estudo_vue/blob/main/public/assets/media/DesktopBk.gif?raw=true);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    /* background-color:var(--color-background-home); */
     justify-content: center;
     align-items: center;
 }
